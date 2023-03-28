@@ -1,0 +1,15 @@
+thead th {
+    background-color: #4d73be !important; 
+    color: white;
+    border: white solid 2px !important;
+}
+
+tbody tr:nth-child(odd) { 
+    background: #d0d5e8;
+    border: white solid 2px !important;
+ }
+
+ tbody tr:nth-child(even) { 
+    background: #e9ebf4; 
+    border: white solid 2px !important;
+ }
