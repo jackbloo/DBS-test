@@ -59,7 +59,7 @@ const FormComponent = () => {
       return "2px solid #b9d0a3";
     }
   };
-
+  console.log(errors, "ERROR GAES");
   return (
     <Container className="mt-4">
       <Form onSubmit={handleSubmit(onSubmit)}>
@@ -208,6 +208,7 @@ const FormComponent = () => {
           style={{ width: "20%", marginTop: "10px" }}
         >
           <Button
+            data-testid="add-family"
             size="sm"
             as="input"
             type="button"
@@ -216,6 +217,7 @@ const FormComponent = () => {
             onClick={() => handleAdd("family")}
           />
           <Button
+            data-testid="submit-button"
             size="sm"
             as="input"
             type="submit"
