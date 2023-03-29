@@ -13,13 +13,13 @@ const SubHeading = () => {
     }
     return(
 
-        <Container className="mt-3">
-                    {location?.pathname === "/" ? (             <Stack direction="horizontal" gap={3}>
-      <div><b> List Users</b> </div>
-      <div className="bg-light border ms-auto">
-      <Button size="sm" as="input" type="submit" value="Create new users" style={{background: "#4d73be"}} onClick={() => handleClick()} />
-      </div>
-      </Stack>):(<div><b>Create New Users</b> </div>)
+      <Container className="mt-3">
+        {location?.pathname === "/" ? (<Stack direction="horizontal" gap={3}>
+        <div><b> List Users</b> </div>
+        <div className="bg-light border ms-auto">
+        <Button data-testid="new-user-button" size="sm" as="input" type="submit" value="Create new users" style={{background: "#4d73be"}} onClick={() => handleClick()} />
+        </div>
+        </Stack>):(<div><b>Create New Users</b> </div>)
     }
       </Container>
     )

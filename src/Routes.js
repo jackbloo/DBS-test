@@ -1,10 +1,9 @@
-import React from "react";
+import React, {lazy} from "react";
 import { Route, Routes as Switch } from "react-router-dom";
-import ListPage from "./Page/ListPage";
-import CreatePage from "./Page/CreatePage";
+const ListPage = lazy(() => "./Page/ListPage");
+const CreatePage = lazy(() => "./Page/CreatePage") ;
 
 const Routes = () => {
-
     return(
         <Switch>
             <Route path="/create" element={<CreatePage/>}/>
