@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-import { Container, Row, Col, Button, Form, Stack } from "react-bootstrap/";
+import { Container, Row, Col, Button, Form, Stack } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 import { addData } from "../../features/data/dataSlice";
 import { useNavigate } from "react-router-dom";
@@ -59,7 +59,7 @@ const FormComponent = () => {
       return "2px solid #b9d0a3";
     }
   };
-  console.log(errors, "ERROR GAES");
+
   return (
     <Container className="mt-4">
       <Form onSubmit={handleSubmit(onSubmit)}>

@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  render,
-  screen,
-  fireEvent,
-  waitFor,
-  cleanup,
-} from "@testing-library/react";
+import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import Form from "../index";
 
 const mockedUseNavigate = jest.fn();
@@ -20,9 +14,6 @@ jest.mock("react-redux", () => ({
 }));
 
 describe("Unit testing for Form", () => {
-  afterEach(async () => {
-    await cleanup();
-  });
   test("Should display All Name label inputs", () => {
     render(<Form />);
     expect(screen.getAllByText("Name").length).toBe(2);

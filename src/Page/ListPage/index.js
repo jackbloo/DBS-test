@@ -5,15 +5,14 @@ import TableComponent from "../../components/Table";
 import SubHeading from "../../components/SubHeading";
 
 const ListPage = () => {
-const userData = useSelector((state) => state.data.userData)
-return(
+  const userData = useSelector((state) => state.data.userData);
+  return (
     <div>
-        <Header/>
-        <SubHeading/>
-        <TableComponent data={userData}/>
+      <Header />
+      <SubHeading />
+      <TableComponent data={userData} />
     </div>
+  );
+};
 
-)
-}
-
-export default ListPage
+export default ListPage;
